@@ -8,8 +8,23 @@ public class Creature {
     private int sante = 100;
     private int age = 0;
 
+    public Creature(String nom, boolean sexe, float poids, float taille, int faim, boolean sommeil, int sante, int age) {
+        this.nom = nom;
+        this.sexe = sexe;
+        this.poids = poids;
+        this.taille = taille;
+        this.faim = faim;
+        this.sommeil = sommeil;
+        this.sante = sante;
+        this.age = age;
+    }
+
+    public void setFaim(int faim) {
+        this.faim = faim;
+    }
+
     public void manger(){
-        if (faim<=90){
+        if (faim<=90 && faim>0){
             faim += 10;
             System.out.println("La faim de l'animal est à " + faim);
         }
@@ -19,8 +34,9 @@ public class Creature {
     }
 
     public void emmetreSon(){
-        System.out.println("???");
+        System.out.println(nom + " emmet un son !");
     }
+
     public void soigner(){
         if (sante<=90){
             sante += 10;

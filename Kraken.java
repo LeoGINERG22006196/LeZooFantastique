@@ -1,2 +1,2 @@
-public class Kraken extends Ovipare{
+public class Kraken extends Ovipare {
 }

@@ -1,2 +1,2 @@
-public class Licorne extends Vivipare{
+public class Licorne extends Vivipare {
 }
